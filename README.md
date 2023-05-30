@@ -74,6 +74,8 @@ This application uses the following:
 
 [react-dom](https://www.npmjs.com/package/react-dom) React package for working with the DOM
 
+[react-router-dom](https://www.npmjs.com/package/react-router-dom) declarative routing for React web applications
+
 [react-scripts](https://www.npmjs.com/package/react-scripts) configuration and scripts for Create React App
 
 [web-vitals](https://www.npmjs.com/package/web-vitals) easily measure performance metrics in JavaScript
