@@ -2,19 +2,45 @@
 
 ## Description
 
-
+Create a portfolio using React.
 
 
 ### User Story
 
 ```
-
+AS AN employer looking for candidates with experience building single-page applications
+I WANT to view a potential employee's deployed React portfolio of work samples
+SO THAT I can assess whether they're a good candidate for an open position
 ```
 
 ### Acceptance Criteria
 
 ```
-
+GIVEN a single-page application portfolio for a web developer
+WHEN I load the portfolio
+THEN I am presented with a page containing a header, a section for content, and a footer
+WHEN I view the header
+THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
+WHEN I view the navigation titles
+THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+WHEN I click on a navigation title
+THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
+WHEN I load the portfolio the first time
+THEN the About Me title and section are selected by default
+WHEN I am presented with the About Me section
+THEN I see a recent photo or avatar of the developer and a short bio about them
+WHEN I am presented with the Portfolio section
+THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
+WHEN I am presented with the Contact section
+THEN I see a contact form with fields for a name, an email address, and a message
+WHEN I move my cursor out of one of the form fields without entering text
+THEN I receive a notification that this field is required
+WHEN I enter text into the email address field
+THEN I receive a notification if I have entered an invalid email address
+WHEN I am presented with the Resume section
+THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
+WHEN I view the footer
+THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) 
 ```
 
 ## Table of Contents
@@ -38,52 +64,24 @@ npm run build
 
 This application uses the following:
 
-[Express](https://www.npmjs.com/package/express/v/4.16.4) as a node js web application framework
+[@testing-library/jest-dom](https://www.npmjs.com/package/@testing-library/jest-dom) custom jest matchers to test the state of the DOM
 
-[if-env](https://www.npmjs.com/package/if-env) simplify npm scripts with if-env
+[@testing-library/react](https://www.npmjs.com/package/@testing-library/react) a simple and complete React DOM testing utilities that encourage good testing practices
 
-[code-mirror-themes](https://www.npmjs.com/package/code-mirror-themes) a large collection of Code Mirror themes for your coding pleasure
+[@testing-library/user-event](https://www.npmjs.com/package/@testing-library/user-event) user-event tries to simulate the real events that would happen in the browser as the user interacts with it
 
-[idb](https://www.npmjs.com/package/idb) a small wrapper that makes IndexedDB usable
+[react](https://www.npmjs.com/package/react) React is a JavaScript library for building user interfaces
 
-[concurrently](https://www.npmjs.com/package/concurrently) run multiple commands concurrently
+[react-dom](https://www.npmjs.com/package/react-dom) React package for working with the DOM
 
-[nodemon](https://www.npmjs.com/package/nodemon) a simple monitor script for use during development of a Node.js app
+[react-scripts](https://www.npmjs.com/package/react-scripts) configuration and scripts for Create React App
 
-[@babel/core](https://www.npmjs.com/package/@babel/core) Babel compiler core
-
-[@babel/plugin-transform-runtime](https://www.npmjs.com/package/@babel/plugin-transform-runtime) externalize references to helpers and built-ins, automatically poly-filling your code without polluting globals
-
-[@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) a Babel preset for each environment
-
-[@babel/runtime](https://www.npmjs.com/package/@babel/runtime) Babel's modular runtime helpers
-
-[babel-loader](https://www.npmjs.com/package/babel-loader) babel module loader for webpack
-
-[copy-webpack-plugin](https://www.npmjs.com/package/copy-webpack-plugin) copies individual files or entire directories, which already exist, to the build directory
-
-[css-loader](https://www.npmjs.com/package/css-loader) css loader module for webpack
-
-[html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin) simplifies creation of HTML files to serve your webpack bundles
-
-[http-server](https://www.npmjs.com/package/http-server) a simple zero-configuration command-line http server
-
-[style-loader](https://www.npmjs.com/package/style-loader) style loader module for webpack
-
-[webpack](https://www.npmjs.com/package/webpack) packs ECMAScript / CommonJs / AMD modules for the browser
-
-[webpack-cli](https://www.npmjs.com/package/webpack-cli) CLI for webpack
-
-[webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) serves a webpack app, updates the browser on changes
-
-[webpack-pwa-manifest](https://www.npmjs.com/package/webpack-pwa-manifest) webpack-pwa-manifest is a webpack plugin that generates a 'manifest.json' for your Progressive Web Application
-
-[workbox-webpack-plugin](https://www.npmjs.com/package/workbox-webpack-plugin) a plugin for your Webpack build process, helping you generate a manifest of local files that workbox-sw should pre-cache
+[web-vitals](https://www.npmjs.com/package/web-vitals) easily measure performance metrics in JavaScript
 
 
 ## Usage
 
-
+A portfolio built with React.
 
 
 ### Deployed Site
@@ -104,18 +102,6 @@ mdn web docs: https://developer.mozilla.org/en-US/
 Markdown License badges: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 
 shields.io: https://shields.io/
-
-workbox-webpack-plugin: https://developer.chrome.com/docs/workbox/reference/workbox-webpack-plugin/
-
-Webpack docs: https://webpack.js.org/
-
-CopyWebpackPlugin: https://webpack.js.org/plugins/copy-webpack-plugin/
-
-autoprefix problem with webpack manifest plugin: https://stackoverflow.com/questions/65245185/new-to-webpackautoprefix-problem-with-webpack-manifest-plugin
-
-html-webpack-plugin: https://github.com/jantimon/html-webpack-plugin
-
-cautious-meme for starter code: https://github.com/coding-boot-camp/cautious-meme
 
 
 ## License
