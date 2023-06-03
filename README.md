@@ -70,6 +70,8 @@ This application uses the following:
 
 [@testing-library/user-event](https://www.npmjs.com/package/@testing-library/user-event) user-event tries to simulate the real events that would happen in the browser as the user interacts with it
 
+[bootstrap](https://www.npmjs.com/package/bootstrap) the most popular front-end framework for developing responsive, mobile first projects on the web
+
 [react](https://www.npmjs.com/package/react) React is a JavaScript library for building user interfaces
 
 [react-dom](https://www.npmjs.com/package/react-dom) React package for working with the DOM
@@ -104,6 +106,8 @@ mdn web docs: https://developer.mozilla.org/en-US/
 Markdown License badges: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 
 shields.io: https://shields.io/
+
+Bootstrap docs: https://getbootstrap.com/
 
 
 ## License
