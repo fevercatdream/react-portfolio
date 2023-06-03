@@ -1,16 +1,18 @@
-function Navigation() {
-  const items = ["About Me", "Portfolio", "Contact", "Resume"];
+import { useState } from "react";
 
-  // event handler
-  const handleClick = (event) => console.log(event);
+function Navigation({ navItems, profileName }) {
+  // hook
+  const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Abi Kumagai
-          </a>
+          <h1>
+            <a className="navbar-brand" href="#">
+              {profileName}
+            </a>
+          </h1>
           <button
             className="navbar-toggler"
             type="button"
@@ -24,9 +26,21 @@ function Navigation() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
-              {items.map((item) => (
-                <li className="nav-item" key={item} onClick={handleClick}>
-                  <a className="nav-link active" aria-current="page" href="#">
+              {navItems.map((item, index) => (
+                <li
+                  className={
+                    selectedIndex === index ? "nav-item active" : "nav-item"
+                  }
+                  key={item}
+                  onClick={() => {
+                    setSelectedIndex(index);
+                  }}
+                >
+                  <a
+                    className="nav-link active"
+                    aria-current="page"
+                    href={item}
+                  >
                     {item}
                   </a>
                 </li>
