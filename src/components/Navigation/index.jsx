@@ -1,6 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import "./style.css";
 
-function Navigation({ navItems, profileName }) {
+function Navigation({ navItems, profileName, onSelectItem }) {
   // hook
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
@@ -34,6 +35,7 @@ function Navigation({ navItems, profileName }) {
                   key={item}
                   onClick={() => {
                     setSelectedIndex(index);
+                    onSelectItem(item);
                   }}
                 >
                   <a
