@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 
-function Navigation({ navItems, profileName, onSelectItem }) {
-  // hook
-  const [selectedIndex, setSelectedIndex] = useState(-1);
-
+function Navigation({ navItems, selectedItem, profileName, onSelectItem }) {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -27,14 +24,15 @@ function Navigation({ navItems, profileName, onSelectItem }) {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
-              {navItems.map((item, index) => (
+              {navItems.map((item) => (
                 <li
                   className={
-                    selectedIndex === index ? "nav-item active" : "nav-item"
+                    selectedItem === item ? "nav-item active" : "nav-item"
                   }
                   key={item}
-                  onClick={() => {
-                    setSelectedIndex(index);
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
                     onSelectItem(item);
                   }}
                 >

@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 import "./style.css";
 
-function ContactForm({ onFormSubmit }) {
-  const [cForm, setCForm] = useState("");
+function ContactForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  (e) => {
+  const submitForm = (e) => {
     e.preventDefault();
-
-    onFormSubmit(cForm);
   };
 
   return (
     <>
-      <form onSubmit={cForm}>
+      <form onSubmit={submitForm}>
         <div className="mb-3">
           <label for="nameFormInput" className="form-label">
             Name
           </label>
           <input
-            type="name"
+            type="text"
             className="form-control"
             id="nameFormInput"
+            name="name"
+            value={name}
             placeholder="name"
           />
         </div>
@@ -32,6 +34,8 @@ function ContactForm({ onFormSubmit }) {
             type="email"
             className="form-control"
             id="emailFormInput"
+            name="email"
+            value={email}
             placeholder="name@example.com"
           />
         </div>
@@ -43,12 +47,14 @@ function ContactForm({ onFormSubmit }) {
             className="form-control"
             id="messageFormTextarea"
             rows="3"
+            name="message"
+            value={message}
             placeholder="message"
           ></textarea>
         </div>
-        <input className="btn btn-primary" type="submit" value="Submit">
+        <button className="btn btn-primary" type="submit" value="Submit">
           Submit
-        </input>
+        </button>
       </form>
     </>
   );
