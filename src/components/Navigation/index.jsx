@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 
-function Navigation({ navItems, selectedItem, profileName, onSelectItem }) {
+function Navigation({ profileName, navItems, selectedItem, onSelectItem }) {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
