@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin: 20px 0px;
+}
+
+#github-id,
+#linkedin-id,
+#stack-overflow-id {
+    width: 2em;
+    height: auto;
+}
