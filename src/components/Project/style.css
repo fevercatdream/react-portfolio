@@ -1,0 +1,83 @@
+:root {
+    /* tyrian purple */
+    --color-tyrian-purple: #610345;
+    /* purpureus */
+    --color-purpureus: #a755c2;
+    /* fandango */
+    --color-fandango: #af4d98;
+    /* thistle */
+    --color-thistle: #e6cae9;
+    /* penn red */
+    --color-penn-red: #95190c;
+    /* saffron */
+    --color-saffron: #e3b505;
+    /* french-gray */
+    --color-french-gray: #d5c5c8;
+    /* black */
+    --color-black: black;
+
+    --box-shadow-color: 0 0 10px var(--color-tyrian-purple);
+    --box-shadow-color-hover: 0 0 20px inset var(--color-tyrian-purple), 0 0 20px var(--color-penn-red);
+    --box-shadow-color-hover-reverse: 0 0 20px inset var(--color-penn-red), 0 0 20px var(--color-tyrian-purple);
+
+    --text-shadow-color: 0.5px 0.5px 0.5px black;
+    --text-shadow-color-dark: 1px 1px 1px black, -0.25px -0.25px 1px lightyellow;
+    --text-shadow-color-light: 2px 2px 10px lightyellow, -2px -2px 10px lightyellow, 1.25px 1.25px 0.5px black;
+}
+
+.card {
+    border: 2px solid var(--color-thistle);
+    box-shadow: var(--box-shadow-color);
+    flex: 1 1 320px;
+    height: 240px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card:hover .title-container {
+    color: var(--color-saffron);
+    box-shadow: var(--box-shadow-color-hover-reverse);
+}
+
+.card::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: 50% 50%;
+    filter: saturate(0.75);
+}
+
+.card:hover::before {
+    filter: saturate(1);
+}
+
+.card:hover {
+    box-shadow: var(--box-shadow-color-hover);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    line-height: 1.5;
+    border: 0.5 solid var(--color-black);
+    z-index: 1;
+    padding: 10px 10px;
+    background-color: var(--color-penn-red);
+    color: var(--color-purpureus);
+    /* color: var(--color-fandango); */
+    text-shadow: var(--text-shadow-color-dark);
+}
+
+.title-container .title {
+    font-size: 1.25rem;
+}

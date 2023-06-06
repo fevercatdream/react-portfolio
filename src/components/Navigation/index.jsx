@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import "./style.css";
 
-function Navigation({ profileName, navItems, selectedItem, onSelectItem }) {
+function Navigation({ navItems, selectedItem, onSelectItem }) {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <h1>
-            <a className="navbar-brand" href="#">
-              {profileName}
-            </a>
-          </h1>
           <button
             className="navbar-toggler"
             type="button"

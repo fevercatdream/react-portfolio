@@ -109,6 +109,8 @@ shields.io: https://shields.io/
 
 Bootstrap docs: https://getbootstrap.com/
 
+DOM Elements: https://legacy.reactjs.org/docs/dom-elements.html#style
+
 
 ## License
 
