@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import "./style.css";
 
 function Resume() {
-  return <></>;
+  return (
+    <>
+    
+    </>
+  );
 }
 
 export { Resume };
