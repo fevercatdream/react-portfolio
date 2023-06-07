@@ -4,7 +4,7 @@ import "./style.css";
 function Navigation({ navItems, selectedItem, onSelectItem }) {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <button
             className="navbar-toggler"

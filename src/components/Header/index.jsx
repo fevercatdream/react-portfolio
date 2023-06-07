@@ -8,7 +8,7 @@ function Header({ navItems, onSelectItem, selectedItem }){
     return (
         <header className="App-header">
             <h1>
-                <a className="navbar-brand" onClick={() => onSelectItem("About Me")}>
+                <a id="nav-id" className="navbar-brand" onClick={() => onSelectItem("About Me")}>
                     {profileName}
                 </a>
             </h1>
