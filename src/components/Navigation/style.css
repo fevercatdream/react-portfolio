@@ -1,0 +1,15 @@
+.navbar-nav .nav-item.active .nav-link {
+    color: var(--color-french-gray);
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--color-saffron);
+}
+
+#nav-id {
+    background-color: var(--color-tyrian-purple);
+    color: var(--color-saffron);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}

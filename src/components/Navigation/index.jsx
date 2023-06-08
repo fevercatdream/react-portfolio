@@ -32,7 +32,7 @@ function Navigation({ navItems, selectedItem, onSelectItem }) {
                   }}
                 >
                   <a
-                    className="nav-link active"
+                    className="nav-link"
                     aria-current="page"
                     href={item}
                   >
