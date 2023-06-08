@@ -6,7 +6,7 @@ function Resume() {
     <div className="resume">
       <h2>Resume</h2>
       <br />
-      <span>Download my <a href="./images/cat-peaking-at-you.jpg" download="resume.jpg">resume</a></span>
+      <span>Download my <a href="images/cat-peeking-at-you.jpg" download="resume.jpg">resume</a></span>
       <br />
       <br />
       <h3>Front-end Proficiencies</h3>

@@ -111,6 +111,8 @@ Bootstrap docs: https://getbootstrap.com/
 
 DOM Elements: https://legacy.reactjs.org/docs/dom-elements.html#style
 
+HTML - Email Links: https://www.tutorialspoint.com/html/html_email_links.htm
+
 
 ## License
 
